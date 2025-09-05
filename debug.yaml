@@ -4,7 +4,11 @@ info:
   name: Debug Template - Always Match
   author: huso
   severity: high
-  description: Microsoft Azure is vulnerable to subdomain takeover attacks. Subdomain takeovers are a common, high-severity threat for organizations that regularly create and delete many resources. A subdomain takeover can occur when a D>
+  description: >
+    Microsoft Azure is vulnerable to subdomain takeover attacks. Subdomain
+    takeovers are a common, high-severity threat for organizations that
+    regularly create and delete many resources. A subdomain takeover can
+    occur when a D...
   reference:
     - https://godiego.co/posts/STO/
   classification:
@@ -14,7 +18,7 @@ info:
   metadata:
     max-request: 1
   tags: debug,test
-  
+
 http:
   - method: GET
     path:
@@ -24,5 +28,4 @@ http:
     matchers:
       - type: word
         words:
-          - ""   # boş string her zaman eşleşir
-        condition: contains
+          - ""
